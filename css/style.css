@@ -1,0 +1,112 @@
+.navbar-inverse {
+  background-color: rgba(0, 0, 0, .75);
+  border: none;
+}
+.navbar-brand {
+  
+  padding: 5px 0px 0px 25px;
+}
+
+.container-fluid {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.page1 {
+  background: url("images/redgoldengate.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 375px 0px;
+}
+
+.page2 {
+  background: url("images/yellowkayak.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 350px 0px;
+}
+
+.page3 {
+  background: url("images/docks.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 60px 0px;
+
+}
+
+.page4 {
+  background: url("images/woodbridge.jpg") no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding: 375px 0px;
+}
+
+body {
+  color: white;
+  font-size: 16px;
+}
+
+.middle {
+  background-color: rgba(0, 0, 0, .4);
+  margin: auto;
+  padding: 20px 0;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logoport {
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+.head-text {
+  font-family: "Abel", "Dosis", Lucida, monospace;
+}
+
+p {
+  font-family: "Cabin", "Source Sans Pro", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 0px 5px;
+}
+
+a.hyper {
+  /*color: rgb(33, 37, 47);*/
+  color: white;
+}
+
+a.hyper:hover {
+  color: rgb(41, 137, 188);
+  text-decoration: none;
+}
+
+
+.fa {
+  font-size: 48px;
+}
+
+.carousel-caption {
+  left: 0;
+  top: 40%;
+  width: 100%;
+}
+
+.portpad {
+  padding: 50px 0px;
+}
