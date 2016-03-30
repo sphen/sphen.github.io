@@ -1,174 +1,183 @@
 /* general classes */
-html,body{height:100%;min-height:100%;margin:0;padding:0}
 
+html, body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
+  padding: 0
+}
 body {
   color: white;
   font-size: 16px;
 }
 
-
 /* set up flexbox */
+
 .flxwrap {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -ms-box-pack: center;
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
   flex-direction: column;
 }
-
 .flxbox {
   -webkit-align-self: center;
-      -ms-flex-item-align: center;
-          align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
   padding: 2rem;
 }
 
-
 /* navbar classes */
-.container-fluid {
-    padding-right: 0px;
-    padding-left: 0px;
-}
 
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+}
 .navbar-inverse {
+  background-color: #444444;
   background-color: rgba(0, 0, 0, .75);
   border: none;
 }
-
 .navbar-brand {
-  
-  padding: 5px 0px 0px 25px;
+  padding: 5px 0 0 25px;
 }
-
 
 /* general page classes */
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
-}
 
+.row {
+  margin-right: 0;
+  margin-left: 0;
+}
 .page1 {
-  height:100vh;
+  height: 100vh;
   background: url("images/redgoldengate.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;  
+  background-size: cover;
 }
-
 .page2 {
-    height:100vh;
+  height: 100vh;
   background: url("images/yellowkayak.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
 .page3 {
-  height:100vh;
+  height: 100vh;
   background: url("images/docks.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding: 0px 0px;
+  padding: 0 0;
 }
-
 .page4 {
-   height:95vh;
+  height: 95vh;
 }
-
 .middle {
+  background-color: transparent;
+  background-color: #ecf2f9;
   background-color: rgba(0, 0, 0, .4);
   margin: auto;
   padding: 20px 0;
 }
-
 .logo {
-  margin-top: :10px;
+  margin-top: 10px;
   margin-bottom: 10px;
 }
 
-
 /* text classes */
-.h1, .h2, .h3, h1, h2, h3 {
+
+.h2, .h3, h2, h3 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
-h1 {
+.h1, h1 {
   font-size: 2.5em;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
 .head-text {
   font-family: "Abel", "Dosis", Lucida, monospace;
 }
-
 p {
   font-family: "Cabin", "Source Sans Pro", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px 5px;
 }
 
 /* font awesome size */
+
 .fa {
   font-size: 36px;
 }
 
-
 /* link classes */
+
 a {
   cursor: pointer;
 }
-
 a.hyper {
   /*color: rgb(33, 37, 47);*/
   color: white;
 }
-
 a.hyper:hover {
   color: rgb(41, 137, 188);
   text-decoration: none;
 }
 
 /* portfolio classes */
-.portpad {
-  padding: 25px 0px;
-}
 
+.portpad {
+  padding: 25px 0;
+}
 .logoport {
   margin-bottom: 40px;
 }
-  /* carousel classes */
-    .carousel-caption {
-    left: 0;
-    top: 40%;
-    width: 100%;
-  }
-
-/* footer classes */
-.footer-bottom {
-  height: 5vh;
-  bottom: -10px;
-  margin-bottom: 0;
-  padding: 15px;
+.carousel-inner {
+  height: 100%;
+}
+.item {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  overflow: hidden
 }
 
+/* carousel classes */
+
+.carousel-caption {
+  left: 0;
+  top: 40%;
+  width: 100%;
+}
+
+/* footer classes */
+
 .foot {
-  height:100vh;
+  height: 100vh;
   background: url("images/woodbridge.jpg") no-repeat center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
-
-.foottext {
+.footer-bottom {
+  height: 5vh;
+  bottom: -10px;
+  margin-bottom: 0;
+}
+.foot-pad {
+  padding: 15px;
+}
+.foot-text {
   font-size: 10px;
   color: #888;
 }
-
