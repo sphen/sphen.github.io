@@ -8,7 +8,7 @@ html, body {
 }
 body {
   color: white;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 /* set up flexbox */
@@ -48,6 +48,19 @@ body {
   padding: 5px 0 0 25px;
 }
 
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #e84a55;
+}
+
+.navbar-inverse .navbar-nav > .active,
+.navbar-inverse .navbar-nav > .active,
+.navbar-inverse .navbar-nav > .active {
+  color: #e84a55;
+  background-color: #080808;
+}
+
+
 /* general page classes */
 
 .row {
@@ -79,13 +92,11 @@ body {
   background-size: cover;
   padding: 0 0;
 }
-.page4 {
-  height: 95vh;
-}
+
 .middle {
   background-color: transparent;
   background-color: #ecf2f9;
-  background-color: rgba(0, 0, 0, .4);
+  background-color: rgba(0, 0, 0, .5280);
   margin: auto;
   padding: 20px 0;
 }
@@ -96,20 +107,21 @@ body {
 
 /* text classes */
 
-.h2, .h3, h2, h3 {
+h3, h2 {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.h1, h1 {
-  font-size: 2.5em;
+h1 {
   margin-top: 20px;
   margin-bottom: 20px;
+  font-size: 2.5em;
 }
 .head-text {
-  font-family: "Abel", "Dosis", Lucida, monospace;
+  font-family:  "Roboto Condensed", Lucida, monospace;
+  font-weight: 400;
 }
 p {
-  font-family: "Cabin", "Source Sans Pro", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px 5px;
 }
 
@@ -118,6 +130,18 @@ p {
 .fa {
   font-size: 36px;
 }
+
+.arrow {
+  font-size: 48px;
+  color: #FFF;
+}
+
+a.arrow:hover, a.arrow:focus {
+  color: #e84a55;
+  text-decoration: none;
+}
+
+
 
 /* link classes */
 
@@ -129,7 +153,7 @@ a.hyper {
   color: white;
 }
 a.hyper:hover {
-  color: rgb(41, 137, 188);
+  color: #e84a55;
   text-decoration: none;
 }
 
@@ -147,17 +171,23 @@ a.hyper:hover {
 .item {
   height: 100%;
   position: relative;
-  width: 100%;
   overflow: hidden
+}
+
+.over {
+  background-color: black;
+  opacity: 0;
 }
 
 /* carousel classes */
 
 .carousel-caption {
   left: 0;
-  top: 40%;
+  text-align: center;
   width: 100%;
-}
+  }
+
+
 
 /* footer classes */
 
@@ -170,14 +200,16 @@ a.hyper:hover {
   background-size: cover;
 }
 .footer-bottom {
-  height: 5vh;
-  bottom: -10px;
+  height: 48px;
   margin-bottom: 0;
 }
-.foot-pad {
-  padding: 15px;
+.up {
+  font-size: 12px;
+  color: #FFF;
 }
+
 .foot-text {
   font-size: 10px;
   color: #888;
+  padding: 17px 0;
 }
