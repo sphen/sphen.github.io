@@ -41,7 +41,7 @@ $(function() {
 
 
 
-//third
+//third - prevents scroll in portfolio
 
 $('a[href*="#"]:not([href="#"])').not('#port-carousel a').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

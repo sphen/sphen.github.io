@@ -1,4 +1,5 @@
-// next todo : finish color tansitions
+// include jQuery.ui to activate colors
+var colors = ['#4A89DC', '#3BAFDA', '#967ADC', '#6A50A7', '#BF263C', '#DA4453', '#E9573F', '#F6BB42', "#E0C341", "#8CC152", "#2ABA66", "#37BC9B", "#7DB1B1"];
 
 function getNew() {
 
@@ -38,7 +39,7 @@ function getNew() {
     },
     cache: false
   });
-}
+};
 
 $(document).ready(getNew);
 

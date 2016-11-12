@@ -31,6 +31,7 @@ a:focus {
   background-color: #E3DAC9;
   border-color: #E3DAC9;
   height: 48px;
+  transition: all 0.5s ease 0s;
 }
 
 .btn-primary:focus,
@@ -43,7 +44,7 @@ a:focus {
 .btn-primary:hover {
   color: #E3DAC9;
   background-color: #007888;
-  border-color: #122b40;
+  border-color: #E3DAC9;
 }
 
 .btn.active.focus,
@@ -69,5 +70,11 @@ a:focus {
 @media screen and (max-width: 549px) {
   #quote {
     font-size: 20px;
+  }
+  .btn-primary {
+    margin: .5em;
+  }
+  #getQuote, #twitter {
+    float: none;
   }
 }

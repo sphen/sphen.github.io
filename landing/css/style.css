@@ -1,127 +1,124 @@
 body {
-  background: url("images/yellowwall.jpg") no-repeat center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: #FBFBFB;
+    background: url("images/yellowwall.jpg") no-repeat center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #FBFBFB;
 }
 
 .head, .h4 {
-  font-family: 'Oswald', sans-serif;
-  color: #F5F7FA;
-  padding-top: 25px;
+    font-family: 'Oswald', sans-serif;
+    color: #F5F7FA;
+    padding-top: 25px;
 }
 
 .bike {
-  padding-right: 10px;
-  float: left;
+    padding-right: 10px;
+    float: left;
 }
 
 .p {
-  color: #F5F7FA;
+    color: #F5F7FA;
 }
 
 .label {
-  font-family: 'Oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
 }
 
 .border {
-  border-top: 1px solid #F5F7FA;
-  border-bottom: 1px solid #F5F7FA;
+    border-top: 1px solid #F5F7FA;
+    border-bottom: 1px solid #F5F7FA;
 }
 
 .disclaimer {
-  color: #E6E9ED;
-  font-size: .8rem;
+    color: #E6E9ED;
+    font-size: .8rem;
 }
-.main {
-  height: 95vh;
+
+
+
+.one-half {
+    background-color: rgba(0, 0, 0, .3);
+    padding: 2vh;
 }
 
 .footer {
-  font-family: 'Oswald', sans-serif;
-  height: 5vh;
-  width: 100%;
-  bottom: 0;
-  padding: 1rem;
-  font-size: 1.2rem;
-  margin: 0 auto;
-  text-align: right;
+    font-family: 'Oswald', sans-serif;
+    height: 10vh;
+    width: 100%;
+    bottom: 0;
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    text-align: right;
 }
 
 i {
-  font-size: 1.5rem;
+    font-size: 1.5rem;
 }
 
 a {
-  color: #F6BB42;
-  text-decoration: none;
+    color: #F6BB42;
+    text-decoration: none;
 }
+
 a:hover {
-  color: #F5F7FA; }
-
-.button-primary,
-button.button-primary,
-input[type="submit"].button-primary {
-  color: #F5F7FA;
-  background-color: #F6BB42;
-  border: 2px solid #F6BB42;
-  transition: all 0.5s ease 0s;
+    color: #F5F7FA;
 }
 
+.button-primary, button.button-primary, input[type="submit"].button-primary {
+    color: #F5F7FA;
+    background-color: #F6BB42;
+    border: 2px solid #F6BB42;
+    transition: all 0.5s ease 0s;
+}
 
-  .button.button-primary:hover,
-  button.button-primary:hover,
-  input[type="submit"].button-primary:hover,
-  .button.button-primary:focus,
-  button.button-primary:focus,
-  input[type="submit"].button-primary:focus {
+.button.button-primary:hover, button.button-primary:hover, input[type="submit"].button-primary:hover, .button.button-primary:focus, button.button-primary:focus, input[type="submit"].button-primary:focus {
     border: 2px solid #F6BB42;
     background-color: transparent;
     color: #E6E9ED;
-  }
+}
 
-input[type="email"]{
-  border: 2px solid #F6BB42;
-  background-color: transparent;
-  background-color: rgba(0, 0, 0, .5);
-  color: #E6E9ED;
-  font-weight: 700;
+input[type="email"] {
+    border: 2px solid #F6BB42;
+    background-color: transparent;
+    color: #E6E9ED;
+    font-weight: 700;
+    transition: all 0.5s ease 0s;
 }
 
 input[type="email"]:focus {
-  border: 2px solid #FFCE54;
+    border: 2px solid #FFCE54;
+    background-color: rgba(0, 0, 0, .5);
 }
-
 
 .box {
-  height: 95vh;
+    height: 90vh;
 }
 
-
-
 .content {
-  margin: auto 0;
+    margin: auto 0;
 }
 
 .flxwrap {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -ms-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  flex-direction: column;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    flex-direction: column;
 }
+
 .flxbox {
-  -webkit-align-self: center;
-  -ms-flex-item-align: center;
-  align-self: center;
-  width: 100%;
-  padding: 2rem;
+    -webkit-align-self: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    width: 100%;
+    padding: 2rem;
 }
