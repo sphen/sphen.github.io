@@ -48,16 +48,14 @@ body {
   padding: 5px 0 0 25px;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus {
+.navbar-inverse .navbar-nav > li > a:hover
+ {
   color: #e84a55;
 }
 
-.navbar-inverse .navbar-nav > .active,
-.navbar-inverse .navbar-nav > .active,
 .navbar-inverse .navbar-nav > .active {
-  color: #e84a55;
   background-color: #080808;
+  background-color: rgba(0, 0, 0, .95);
 }
 
 
@@ -120,7 +118,7 @@ h1 {
   font-family:  "Roboto Condensed", Lucida, monospace;
   font-weight: 400;
 }
-p {
+p, .links {
   font-family: "Open Sans", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin: 10px 5px;
 }
