@@ -61,10 +61,29 @@ table {
 html {
     font-size: 16px;
     font-family: 'PT', sans-serif;
+    font-kerning: auto;
     background: #FCFBF2;
     color: #28206C;
     text-align: center;
+
 }
+
+a {
+    background: rgba(255, 255, 255, 0);
+    border-bottom: 1px solid;
+    color: #28206C;
+    line-height: 1.4;
+    padding: .25em;
+    text-decoration: none;
+    
+  }
+  a:hover {
+    background: #28206C;
+    color: #FCFBF2;
+    transition: all .5s ease;
+  }
+
+
 h1 {
     font-size: 150%;
 }
@@ -87,4 +106,9 @@ img {
 }
 .right {
     padding: 5%;
+}
+
+.footer {
+    height: 50px;
+    margin-top: -50px;
 }
