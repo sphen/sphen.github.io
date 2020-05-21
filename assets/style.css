@@ -184,10 +184,9 @@ h1 {
     justify-items: center;
     height: 100vh;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
     .page {
         grid-template-columns: 1fr 1fr;
-        height: 85vh;
     }
   }
 
@@ -204,14 +203,8 @@ img {
 }
 
 .right div {
-    padding-top: 20vh;
+    height: 20vh;
 }
-@media only screen and (max-width: 991px) {
-    .right div {
-        padding-top: 20%;
-    }
-  }
-
 
 .blue {
     background: #01B1EE;
@@ -241,8 +234,8 @@ img {
     height: 50px;
     margin-top: -50px;
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 767px) {
     .footer {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
     }
   }
