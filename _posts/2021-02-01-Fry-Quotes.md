@@ -21,6 +21,6 @@ A quote generator that serves up random quotes by Philip J Fry from the show Fut
 
 The API is built on MongoDB, Express, and Node. The frontend is good old HTML/CSS/JS.
 
-Check out the working quote generator [here](http://sphen.github.io/fryQuotes/index.html)
+Check out the working quote generator [here](https://sphen.net/fry-quotes-frontend/)
 
 View the [api github](https://github.com/sphen/fry-quotes-api) and [front-end github](https://github.com/sphen/fry-quotes-frontend) for more information.
