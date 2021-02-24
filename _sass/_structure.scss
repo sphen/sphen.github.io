@@ -1,0 +1,47 @@
+/* ==========================================================================
+   3. Structure
+   ========================================================================== */
+#page {
+  min-height: 100vh;
+  display: grid;
+  justify-content: stretch;
+  grid-template-rows: 75px 5fr 111px;
+  gap: 3.157rem;
+}
+.inner {
+  align-content: center;
+  display: grid;
+  gap: 3.157rem;
+  grid-template-rows: fit-content(50%);
+  justify-self: stretch;
+  padding: 0 3.157rem;
+  transition: all 300ms ease;
+  @media only screen and (min-width: 1500px) {
+    padding: 0 2.369rem;
+  }
+  @media only screen and (max-width: 599px) {
+    padding: 0 1.777rem;
+  }
+}
+
+.main-content {
+  display: grid;
+  justify-items: center;
+  align-items: start;
+  align-content: start;
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 3.157rem;
+}
+
+.latest {
+  display: grid;
+  justify-self: stretch;
+  align-items: start;
+  align-content: start;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-rows: minmax(min-content, max-content);
+  gap: 3.157rem;
+  @media only screen and (max-width: 767px) {
+    grid-template-columns: minmax(200px, 1fr);
+  }
+}

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+<main class="main-content post-main fadeInDown delay_075s">
+  <article class="post">
+    <div class="post-grid">
+      <header class="article-header">
+        <h2 class="post-title">{{page.title}}</h2>
+        {% if page.feature_image and page.feature_image != "" %}
+        <figure class="image-card width-wide">
+          <a href="{{ page.image_link }}" rel="noopener"
+            ><img
+              src="{{ page.feature_image | relative_url }}"
+              alt="{{ page.title }}"
+          /></a>
+        </figure>
+        <!-- .post-thumbnail -->
+        {% endif %}
+      </header>
+      <!-- .post-header -->
+      <div class="post-content article-body">{{content}}</div>
+      <!-- .post-content -->
+      {% if page.tags.size > 0 %}
+      <div class="post-meta">
+        <!-- .post-meta --><span class="post-tags">
+          in {% for tag in page.tags %}<a
+            href="{{ site.baseurl }}/tags/#{{ tag | cgi_escape }}"
+            rel="tag"
+            >{{ tag }}</a
+          >{% unless forloop.last %}, {% endunless %}{% endfor %}</span
+        >
+      </div>
+      {% endif %}
+      <div class="post-share">
+        <span>Share:</span>
+        <a
+          target="_blank"
+          href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ page.url | absolute_url }}"
+          rel="noopener"
+          >Twitter</a
+        >
+        <a
+          target="_blank"
+          href="https://www.facebook.com/sharer/sharer.php?u={{ page.url | absolute_url }}&amp;t={{ page.title | uri_escape }}"
+          rel="noopener"
+          >Facebook</a
+        >
+      </div>
+      <!-- .share -->
+    </div>
+  </article>
+  <!-- .post -->
+
+  {% if site.disqus and site.disqus != "" %} {% include disqus.html %} {% endif
+  %}
+</main>
+<!-- .main-content -->

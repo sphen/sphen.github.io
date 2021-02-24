@@ -1,31 +1,37 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/png" />
-    <link href="assets/style.css" rel="stylesheet">
-    <title>sphen code</title>
-</head>
-
-<body>
-    <div class="page">
-        <div class="left">
-            <h4>new sphen.net</h4>
-            <h1>coming soon</h1>
-        </div>
-        <div class="right">
-            <!-- <img src="assets/bbq.svg" alt="cooking up a new website"> -->
-            <div class="blue"> </div>
-            <div class="green"> </div>
-            <div class="yellow"> </div>
-            <div class="orange"> </div>
-            <div class="pink"> </div>
-        </div>
-    </div>
-    <footer class="footer">
-        <a href="https://www.github.com/sphen">github</a>
-    </footer>
-</body>
-
-</html>
+{% if site.description and site.description != "" and page.url == "/" %}
+<div class="site-description fadeInDown delay_05s">
+  <p>{{ site.description }}</p>
+</div>
+<!-- .site-description -->
+{% endif %}
+<main class="main-content fadeInUp delay_075s">
+  
+  <h2 class="post-header">Latest Projects</h2>
+  <div class="latest">
+  {% for post in site.posts limit:4 %}
+  <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+  <article class="post front cl">
+    <header class="post-header">
+      
+        <h3 class="post-title">{{post.title}}</h3>
+        <p class="post-desc">
+          {{ post.description }}
+        </p>
+        <!-- .post-meta -->
+      
+    </header>
+    <!-- .post-header -->
+  </article>
+  <!-- .post -->
+</a>
+  {% endfor %}
+</div>
+</main>
+<a class="geo more-projects" href="{{ site.baseurl }}/projects"
+  >see more projects
+</a>
+<!-- .site-main -->

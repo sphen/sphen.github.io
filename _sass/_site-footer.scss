@@ -1,0 +1,50 @@
+/* ==========================================================================
+   8. Site Footer
+   ========================================================================== */
+
+.site-footer {
+  align-items: center;
+  justify-items: center;
+  background: _palette(primary);
+  color: _palette(fade);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 30px 0;
+}
+
+.offsite-links {
+  margin-left: 30px;
+  a {
+    background: none;
+    color: _palette(fade);
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 12px;
+    text-decoration: none;
+    &:hover {
+      color: _palette(accent);
+    }
+  }
+}
+
+.site-info,
+.site-info p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.back-to-top {
+  text-decoration: none;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .back-to-top {
+    text-align: center;
+  }
+}

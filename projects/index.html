@@ -1,0 +1,64 @@
+---
+layout: default
+title: Projects
+---
+
+<main class="main-content fadeInDown delay_075s">
+  <h2 class="article-header">Projects</h2>
+  <div class="latest">
+    {% for post in paginator.posts %}
+    <a href="{{ site.baseurl }}{{ post.url }}" rel="bookmark">
+      <article class="post preview cl">
+        <div class="post-header">
+          <h3 class="post-title">{{post.title}}</h3>
+          <div class="post-content">
+            {% if post.description and post.description != "" %} {{
+            post.description }} {% endif %}
+          </div>
+          <!-- <a href="{{ site.baseurl }}{{ post.url }}" class="read-more-link"></a> -->
+          <!-- <div class="read-more">Continue reading &rarr;</div> -->
+        </div>
+
+        {% if post.feature_image and post.feature_image != "" %}
+        <figure class="post-thumbnail image-card">
+          <img
+            src="{{ post.feature_image | relative_url }}"
+            alt="{{ post.title }}"
+          />
+        </figure>
+        <!-- .post-thumbnail -->
+        {% endif %}
+
+        <!-- .post-header -->
+
+        <!-- .post-content -->
+      </article>
+    </a>
+    <!-- .post -->
+    {% endfor %}
+  </div>
+</main>
+{% if paginator.total_pages > 1 %}
+<nav class="pagination">
+  <h2 class="screen-reader-text">Posts navigation</h2>
+  <div class="nav-links">
+    {% if paginator.previous_page %}
+    <a
+      href="{{ paginator.previous_page_path | relative_url }}"
+      class="newer-posts"
+      >&larr; Newer Posts</a
+    >
+    {% endif %}
+    <span class="page-number"
+      >Page {{ paginator.page }} of {{ paginator.total_pages }}</span
+    >
+    {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}" class="older-posts"
+      >Older Posts &rarr;</a
+    >
+    {% endif %}
+  </div>
+</nav>
+<!-- .pagination -->
+{% endif %}
+<!-- .site-main -->
