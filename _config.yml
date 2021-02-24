@@ -12,7 +12,7 @@ description: "I'm sphen, and this is my website - a depot for things I learn and
 baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "https://sphen.net"
+url: "sphen.net"
 
 # Favicon
 favicon: ../images/favicon.png
