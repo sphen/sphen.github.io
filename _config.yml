@@ -9,10 +9,10 @@ title: "sphen"
 description: "I'm sphen, and this is my website - a depot for things I learn and create. Thanks for visiting."
 
 # The subpath of your site, e.g. /blog, for generating urls.
-baseurl: ""
+#baseurl: ""
 
 # The base hostname & protocol of your site for where absolute urls are needed.
-url: "sphen.net"
+#url: "sphen.net"
 
 # Favicon
 favicon: ../images/favicon.png
