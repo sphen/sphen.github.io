@@ -19,6 +19,6 @@ Scores and difficulty are kept in local storage. Will circle back and upgrade to
 
 The game is built with vanilla HTML/CSS/JS.
 
-Check out the demo [here](#).
+Check out the demo [here](https://sphen.net/typetime/).
 
 View the [github](https://github.com/sphen/typetime) for more information.
